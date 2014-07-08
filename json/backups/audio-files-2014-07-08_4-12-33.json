@@ -200,22 +200,7 @@
 				"lyric":"",
 				"duration":"0:35"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"dont-let-me-down-falsetto",
-				"title":"Don't Let Me Down - Falsetto",
-				"date":"2014-01-15",
-				"lyric":"",
-				"duration":"0:23"
-		},
-		{
-				"album":"Volume 3",
-				"filename":"dont-let-me-down",
-				"title":"Don't Let Me Down",
-				"date":"2014-01-15",
-				"lyric":"",
-				"duration":"0:46"
-		},
+		
 		{
 				"album":"Volume 1",
 				"filename":"dr-football",
@@ -304,22 +289,7 @@
 				"lyric":"",
 				"duration":"0:55"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"fairytale-home-man",
-				"title":"Fairytale: Home Man",
-				"date":"2014-05-17",
-				"lyric":"",
-				"duration":"0:29"
-		},
-		{
-				"album":"Volume 3",
-				"filename":"fairytale-underwater-man-and-choosey",
-				"title":"Fairytale: Underwater Man and Choosey",
-				"date":"2014-05-17",
-				"lyric":"",
-				"duration":"0:34"
-		},
+		
 		{
 				"album":"Volume 1",
 				"filename":"fill-up-my-sachel",
@@ -392,14 +362,7 @@
 				"lyric":"",
 				"duration":"0:06"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"frank-dinosaur-christmas",
-				"title":"Frank: Dinosaur Christmas",
-				"date":"2014-01-11",
-				"lyric":"",
-				"duration":"0:54"
-		},
+		
 		{
 				"album":"Volume 1",
 				"filename":"goldilocks-future",
@@ -432,14 +395,7 @@
 				"lyric":"",
 				"duration":"0:33"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"hamburgers-or-french-fries",
-				"title":"Hamburgers Or French Fries",
-				"date":"2014-06-21",
-				"lyric":"",
-				"duration":"0:18"
-		},
+		
 		{
 				"album":"Volume 1",
 				"filename":"hes-got-all-your-belongings-in-france",
@@ -480,30 +436,7 @@
 				"lyric":"",
 				"duration":"0:09"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"how-many-minutes",
-				"title":"How Many Minutes?",
-				"date":"2014-04-26",
-				"lyric":"",
-				"duration":"0:02"
-		},
-		{
-				"album":"Volume 3",
-				"filename":"hyem-hyem-hyem-hyem",
-				"title":"Hyem Hyem Hyem Hyem",
-				"date":"2014-01-15",
-				"lyric":"",
-				"duration":"0:04"
-		},
-		{
-				"album":"Volume 3",
-				"filename":"i-can-do-it",
-				"title":"I Can Do It",
-				"date":"2014-01-24",
-				"lyric":"",
-				"duration":"0:01"
-		},
+		
 		{
 				"album":"Volume 2",
 				"filename":"i-jumped-up-so-high",
@@ -616,22 +549,7 @@
 				"lyric":"",
 				"duration":"1:20"
 		},
-		{
-				"album":"Volume 3",
-				"filename":"mispronounce-banana",
-				"title":"Mispronounce: Banana",
-				"date":"2014-05-02",
-				"lyric":"",
-				"duration":"0:01"
-		},
-		{
-				"album":"Volume 3",
-				"filename":"mr-alert-senses",
-				"title":"Mr. Alert Senses",
-				"date":"2014-05-09",
-				"lyric":"",
-				"duration":"0:08"
-		},
+		
 		{
 				"album":"Volume 1",
 				"filename":"mr-and-mrs-bumblebee",
@@ -1273,6 +1191,6 @@
 				"duration":"0:04"
 		}	
 	 ], 
-	"timestamp":"2014-07-08_4-14-13"	
+	"timestamp":"2014-07-08_4-12-33"	
 	 
  }
