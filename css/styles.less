@@ -6,6 +6,10 @@ body {
 	font-family: 'Chau Philomene One', sans-serif;
 }
 
+audio {
+	display: block;
+
+}
 
 h1 {
 	font-size: 60px;
@@ -36,19 +40,41 @@ h2 {
 		margin: 0;
 		width: 100%;
 		text-align: left;
+		outline: none;
+		position: relative;
 
-		span {
+		.duration {
 			float: right;
 			color: #888;
 		}
-
-		&.played span {
+		&.played .duration {
 			color: #777;
 		}
-		&.played.playing span {
+		&.played.playing .duration {
 			color: #555;
 		}
 	} // button
+
+
+	.progress {
+		height: 100%;
+		width: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.playing {
+		.progress {
+			background: rgba(252,219,0,.15);
+		}
+	}
+	.playing ,
+	.played {
+		.progress {
+			border-right: 1px solid rgba(252,219,0, 0.4);
+		}
+	}
+	
 
 	.played {
 		border: 1px solid #80cc58;
@@ -59,7 +85,7 @@ h2 {
 			color: #000;
 			.box-shadow(0px 0px 10px 0px #A9C128);
 			.gradient(#88d062, #349f15);
-			span {
+			.duration {
 				color: #555;
 			}
 		}
@@ -81,7 +107,7 @@ h2 {
 		}
 		button {
 			width: inherit;
-			span {
+			.duration {
 				margin-left: 10px;
 				float: none;
 			}

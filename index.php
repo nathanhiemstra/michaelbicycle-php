@@ -93,7 +93,7 @@
 			if ($not_first_album) {
 				print '</ul>';
 			}
-			echo '<h2>Album: “'.$this_album.'”</h2>';
+			echo '<h2>'.$this_album.'</h2>';
 			if ($not_first_album) {
 				print '<ul class="audio-container">';
 			}
@@ -102,10 +102,15 @@
 		$not_first_album = true;
 ?>
 						<li>
-							<audio  preload="none" title="<?=$record->title?> <span><?=$record->duration;?></span>">
+							<audio preload="none" title="<?=$record->title?> <span><?=$record->duration;?></span>">
 								<source  src="audio/mp3/<?=$record->filename?>.mp3" type="audio/mpeg">
 								<source src="audio/ogg/<?=$record->filename?>.ogg" type="audio/ogg">
 							</audio>
+							<button>
+								<span class="title"><?=$record->title?></span>
+								<span class="duration"><?=$record->duration;?></span>
+								<span class="progress"></span>
+							</button>
 						</li>
 <? } ?> 
 					</ul>
@@ -118,68 +123,25 @@
 					var disqus_shortname = 'michaelbicycle'; // required: replace example with your forum shortname
 
 					/* * * DON'T EDIT BELOW THIS LINE * * */
-					(function() {
-						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-					})();
+					// (function() {
+					// 	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					// 	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					// 	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					// })();
 				</script>
 				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 				<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     			</div>
 		</div><!-- end #main -->
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-		<script type="text/javascript" charset="utf-8">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="/js/application.js"></script>
 
-			$(document).ready(function() {
+		<scrip>
 
-				$("audio").removeAttr("controls").each(function(i, audioElement) {
-					var audio = $(this);
-					var that = this; //closure to keep reference to current audio tag
-					var src = $("source",this).attr("src");
 
-					// When done playing, remove class
-					$(this).bind('ended', function(){
-						$(this).next().removeClass("playing");
-					}, false);
 
-					// Set up buttons and add pause/play logic
-					$(audio).parent().append($('<button>'+audio.attr("title")+'</button>').click(function() {
-
-						var trigger = $(that).next("button");
-						$(audio).addClass('clicked');
-						$(trigger).addClass('played');
-
-						// Check all the audio files to see if they are currently playing
-						$('.audio-container audio').each(function() {
-
-							$(this).next().removeClass("playing");
-
-							// If this is playing...
-							if(!this.paused){
-
-								// Pause this playing
-								this.pause();
-
-								// This playing one is NOT the one we just clicked so start it over
-								if ($(this).hasClass("clicked")) {} else {
-									this.currentTime = 0;
-								}
-							// If this is paused...
-							} else {
-								// This paused one IS the one we just clicked
-								if ($(this).hasClass("clicked")) {
-									this.play();
-									$(this).next().addClass("playing");
-								}
-							}
-						});
-						$(audio).removeClass('clicked');
-					}));
-				});
-			});
-		</script>
+		</scrip>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
